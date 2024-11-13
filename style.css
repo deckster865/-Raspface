@@ -1,0 +1,149 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f2f6ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    background-color: #ff7b54;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #fff;
+    border-bottom: 3px solid #ff5b2d;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Estilos principais */
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Seções */
+section {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #ff7b54;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Formulário de upload */
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    color: #4f4f4f;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input[type="file"],
+.input-group input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input-group input[type="file"]:focus,
+.input-group input[type="text"]:focus {
+    border-color: #ff7b54;
+}
+
+/* Botões */
+button[type="submit"],
+#voteButton,
+section#share button {
+    background-color: #ff7b54;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover,
+#voteButton:hover,
+section#share button:hover {
+    background-color: #ff5b2d;
+}
+
+/* Galeria de Fotos */
+#photoGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+#photoGallery img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Caixa de seleção de votação */
+#voteSelect {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+footer p {
+    margin-top: 1rem;
+}

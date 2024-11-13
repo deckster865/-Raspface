@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação de quem é mais bonito!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Raspface</h1>
+    </header>
+
+    <main>
+        <!-- Seção de Upload de Fotos -->
+        <section id="upload">
+            <h2>Coloque fotos dos seu amigos:</h2>
+            <form id="photoForm">
+                <!-- Primeira foto e nome -->
+                <div class="input-group">
+                    <label for="photoInput1">Escolha a primeira foto:</label>
+                    <input id="photoInput1" type="file" accept="image/*" required>
+                    <label for="nameInput1">Nome da pessoa:</label>
+                    <input id="nameInput1" type="text" placeholder="Nome da pessoa" required>
+                </div>
+
+                <!-- Segunda foto e nome -->
+                <div class="input-group">
+                    <label for="photoInput2">Escolha a segunda foto:</label>
+                    <input id="photoInput2" type="file" accept="image/*" required>
+                    <label for="nameInput2">Nome da pessoa:</label>
+                    <input id="nameInput2" type="text" placeholder="Nome da pessoa" required>
+                </div>
+
+                <button type="submit">Enviar Fotos</button>
+            </form>
+        </section>
+
+        <!-- Seção de Votação (Chipar) -->
+        <section id="voting">
+            <h2>Vote na pessoa maias bonita!</h2>
+            <div id="photoGallery">
+                <!-- As fotos enviadas aparecerão aqui para votação -->
+            </div>
+            <label for="voteSelect">quem é mais bonito:</label>
+            <select id="voteSelect">
+                <option value="combination1">Pessoa 1</option>
+                <option value="combination2">Pessoa 2</option>
+            </select>
+            <button id="voteButton">Votar</button>
+        </section>
+
+        <!-- Seção de Compartilhamento -->
+        <section id="share">
+            <h2>Compartilhe</h2>
+            <button onclick="shareTelegram()">Compartilhar no Telegram</button>
+            <button onclick="shareWhatsApp()">Compartilhar no WhatsApp</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; raspface. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
